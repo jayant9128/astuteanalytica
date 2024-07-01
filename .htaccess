@@ -1,0 +1,46 @@
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+Options -Indexes
+    RewriteEngine On
+   # RewriteCond %{HTTP_HOST}  !^www\.astuteanalytica\.com$ [NC]
+	#RewriteRule ^(.*) https://www.astuteanalytica.com/$1 [L,R]
+	
+	 RewriteCond %{HTTPS} off
+	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+	RewriteCond %{HTTP_HOST} !^www\. [NC]
+	RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{HTTP_REFERER} !^https://www.astuteanalytica.com [NC]
+RewriteRule .* - [F]
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+	
+	<Files .env>
+        Order allow,deny
+        Deny from all
+      </Files>
+
+      <Files composer.json>
+        Order allow,deny
+        Deny from all
+      </Files>
+    
+	
+	
+</IfModule>

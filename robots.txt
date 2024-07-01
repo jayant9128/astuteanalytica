@@ -1,0 +1,4 @@
+Sitemap: https://www.astuteanalytica.com/sitemap.xml
+
+User-agent: *
+Disallow: /checkout

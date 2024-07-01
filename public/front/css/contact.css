@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+.header-breadcrumb {
+    padding: 10px 0;
+    min-height: 100%;
+    background-color: #02185a;
+    position: relative!important;
+    background-size: cover!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    height: 100%;
+    width: 100%;
+}
+
+.header-breadcrumb:after {
+    background: rgba(50, 50, 50, .4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+.header-breadcrumb .container {
+    position: relative;
+    z-index: 5;
+    text-align: left;
+}
+
+.header-breadcrumb .page-title-heading {
+    color: #fff;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 27px;
+}
+
+.header-breadcrumb .breadcrumb,
+.header-breadcrumb-two .breadcrumb {
+    text-align: left;
+    padding: 0;
+    background: 0 0;
+    display: block;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+.header-breadcrumb .breadcrumb li,
+.header-breadcrumb-two .breadcrumb li {
+    display: inline-block;
+    position: relative;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #eee;
+    text-transform: capitalize;
+    transition: .4s;
+    letter-spacing: .2px;
+    font-family: Roboto, sans-serif;
+}
+
+.breadcrumb li a {
+    font-weight: 500;
+}
+
+.contact-us-page .section-title-left {
+    margin-bottom: 20px;
+}
+
+.contact-us-page {
+    background: #fff;
+    padding: 80px 0 60px;
+}
+
+.title-inner-page {
+    color: #02185a;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 25px;
+    margin-top: 0;
+}
+
+.contact-us-page .section-title-left p {
+    margin-bottom: 0;
+}
+
+select {
+    height: 50px!important;
+    outline: 0;
+    resize: none;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    line-height: 24px;
+    font-size: 14px;
+    border: 1px solid #f1f1f1;
+    padding: 13px 20px;
+    background: #f9f9f9;
+    color: #02185a;
+    border-radius: 0;
+    margin-bottom: 30px;
+    box-shadow: none!important;
+    width: 100%;
+}
+
+.main-btn-two {
+    position: relative;
+    min-width: 180px;
+    padding: 0px;
+    background: #fff;
+    color: #02185a;
+    line-height: 45px;
+    height: 45px;
+    display: inline-block;
+    -webkite-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    font-family: Poppins, sans-serif;
+    border-radius: 50px;
+    overflow: hidden
+}
+
+.main-btn-two .text-btn {
+    float: left;
+    min-width: 130px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    letter-spacing: .5px;
+    overflow: hidden
+}
+
+.main-btn-two .text-btn .text-btn-one {
+    display: block;
+    margin-left: -100%;
+    float: left;
+    transition: .4s;
+    text-align: center;
+    min-width: 130px;
+    height: 45px;
+    padding: 0 15px;
+    background: #c30c17;
+    color: #fff
+}
+
+.main-btn-two .text-btn .text-btn-two {
+    margin-left: 0;
+    transition: .4s;
+    min-width: 130px;
+    height: 45px;
+    text-align: center;
+    display: block;
+    padding: 0 15px;
+    display: block;
+    background: #fff;
+    color: #02185a
+}
+
+.main-btn-two:hover .text-btn .text-btn-one {
+    margin-left: 0
+}
+
+.main-btn-two:hover .text-btn .text-btn-two {
+    margin-left: 100%
+}
+
+.main-btn-two .arrow-btn:after,
+.main-btn-two .text-btn:after,
+.main-btn-two:after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 100%
+}
+
+.main-btn-two .text-btn:before {
+    content: "";
+    width: 2px;
+    height: 45px;
+    background: #ddd;
+    right: 0;
+    top: 0;
+    position: absolute;
+    opacity: .5
+}
+
+.main-btn-one:hover .text-btn:before {
+    background: #e06026
+}
+
+.main-btn-two .arrow-btn {
+    height: 45px;
+    width: 50px;
+    text-align: center;
+    overflow: hidden;
+    background: #f9f9f9;
+    line-height: 45px
+}
+
+.main-btn-two .arrow-btn .arrow-one {
+    display: block;
+    background: #c30c17;
+    font-size: 13px;
+    line-height: 45px;
+    color: #fff;
+    margin-left: -50px;
+    float: left;
+    transition: .4s;
+    text-align: center;
+    width: 50px;
+    height: 45px;
+    font-size: 15px
+}
+
+.main-btn-two .arrow-btn .arrow-two {
+    background: #f9f9f9;
+    font-size: 13px;
+    line-height: 45px;
+    margin-left: 0;
+    transition: .4s;
+    height: 45px;
+    width: 50px;
+    text-align: center;
+    font-size: 15px;
+    display: block
+}
+
+.main-btn-two:hover .arrow-btn .arrow-one {
+    margin-left: 0
+}
+
+.main-btn-two:hover .arrow-btn .arrow-two {
+    margin-left: 50px
+}
+
+.main-btn-two .text-btn .text-btn-one {
+    background: #02185a;
+    color: #fff
+}
+
+.main-btn-two .text-btn .text-btn-two {
+    background: #c30c17;
+    color: #fff
+}
+
+.main-btn-two .text-btn:before {
+    background: #e4500d
+}
+
+.main-btn-two:hover .text-btn:before {
+    background: #2e3e6c
+}
+
+.main-btn-two .arrow-btn {
+    background: #c30c17;
+    line-height: 45px
+}
+
+.text-btn:hover {
+    cursor: pointer
+}
+
+.main-btn-two .arrow-btn .arrow-one {
+    background: #011552;
+    color: #fff
+}
+
+.main-btn-two .arrow-btn .arrow-two {
+    background: #c30c17;
+    color: #fff
+}
+
+.right-side-contact h4 {
+    color: #c30c17;
+}
+
+.contact-sub-heading {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+.contact-item .inner-contact {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e6e4e4;
+    padding-bottom: 20px;
+}
+
+.contact-item .inner-contact span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    background: #c30c17;
+    border: 1px solid #c30c17;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.contact-item .inner-contact h4 {
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 10px;
+    font-weight: 600;
+    color: #02185a;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.contact-us-meta .contact-item p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 15px;
+    position: relative;
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+.fa-clock:before {
+    content: "\f017";
+}
+
+.fa-globe:before {
+    content: "\f0ac";
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    /* position relative and z-index fix webkit rendering fonts issue */
+    position: relative;
+    z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */
+}
+
+.owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+    display: none;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+}
+
+.owl-carousel.owl-loaded {
+    display: block;
+}
+
+.owl-carousel.owl-loading {
+    opacity: 0;
+    display: block;
+}
+
+.owl-carousel.owl-hidden {
+    opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+    visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+    direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+    float: right;
+}
+
+
+/* No Js */
+
+.no-js .owl-carousel {
+    display: block;
+}
+
+
+/*
+   *  Owl Carousel - Animate Plugin
+   */
+
+.owl-carousel .animated {
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+    z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+    z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*
+   * 	Owl Carousel - Auto Height Plugin
+   */
+
+.owl-height {
+    transition: height 500ms ease-in-out;
+}
+
+
+/*
+   * 	Owl Carousel - Lazy Load Plugin
+   */
+
+.owl-carousel .owl-item {
+    /**
+              This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+              calculation of the height of the owl-item that breaks page layouts
+           */
+}
+
+.owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-item .owl-lazy[src^=""],
+.owl-carousel .owl-item .owl-lazy:not([src]) {
+    max-height: 0;
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+    transform-style: preserve-3d;
+}
+
+
+/*
+   * 	Owl Carousel - Video Plugin
+   */
+
+.owl-carousel .owl-video-wrapper {
+    position: relative;
+    height: 100%;
+    background: #000;
+}
+
+.owl-carousel .owl-video-play-icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    background: url("owl.video.play.png") no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: transform 100ms ease;
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+    -ms-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+}
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+    display: none;
+}
+
+.owl-carousel .owl-video-tn {
+    opacity: 0;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-video-frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.clients .owl-nav button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin: 0!important;
+    color: #02185a!important;
+    text-align: center;
+    line-height: 42px;
+    font-size: 22px;
+    background: 0 0;
+    border-radius: 1px;
+    z-index: 999;
+    margin-top: -20px!important;
+}
+
+.clients .owl-nav {
+    width: 100%;
+    z-index: 999;
+}
+
+.clients .owl-nav button.owl-prev {
+    transition: all .4s ease 0;
+    left: -25px;
+}
+
+.clients .owl-nav button.owl-next {
+    transition: all .4s ease 0;
+    right: -25px;
+}
+
+.licence-box {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 110px;
+    font-size: 20px;
+    z-index: 9;
+}
+
+.clients {
+    position: relative;
+    background: #fff;
+    padding: 60px 0;
+}
+
+.overlay {
+    background: linear-gradient(45deg, rgba(38, 38, 47, .95) 0, rgba(38, 38, 47, .95) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.clients .overlay {
+    background-image: url(../img/map_img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    opacity: .4;
+}
+
+.hadding-title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.hadding-title h4 {
+    text-align: center;
+    color: #C30C17;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.hadding-title h5 {
+    text-align: center;
+    line-height: 1;
+    color: #02185A;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.sponsor-item {
+    margin: 5px 0;
+    padding: 0 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #ccc;
+    overflow: hidden;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+
+@media(max-width: 1170px) {}
+
+@media (max-width: 992px) {
+    .header-breadcrumb .page-title-heading {
+        font-size: 24px;
+        margin-bottom: 15px;
+        line-height: unset;
+    }
+    .clients .owl-nav button.owl-prev {
+        transition: all .4s ease 0;
+        left: -10px;
+    }
+    .clients .owl-nav button.owl-next {
+        transition: all .4s ease 0;
+        right: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-breadcrumb .page-title-heading {
+        font-size: 20px;
+        margin-bottom: 15px;
+        line-height: unset;
+    }
+}
+
+@media (max-width: 550px) {}

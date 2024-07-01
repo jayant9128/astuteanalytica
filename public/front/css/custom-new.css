@@ -1,0 +1,52 @@
+#clients.clients {
+    padding-bottom: 90px;
+}
+.footer-default-padding, footer {
+    padding-top: 0px;
+}
+.row-contact {
+    top: -40px;
+    border-radius: 4px;
+}
+.footer-widget .social-media{
+    margin-bottom: 15px;
+}
+.footer-widget .subhead-h4{
+    font-size: 16px;
+}
+.logo-mrsi .payment-logo{
+    position: relative;
+    margin-top: 10px;
+}
+.logo-mrsi .payment-logo img{
+    position: relative;
+    max-width: 100%;
+}
+.logo-mrsi .payment-logo.iso-logo img{
+    background: transparent;
+    width: 80px;
+    height: 80px;
+}
+.logo-mrsi .payment-logo.iso-logo p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.foot-bottom {
+    margin: 5px;
+    width: 115px;
+}
+.footer-widget p svg {
+    margin-right: 5px;
+    margin-top: 1px;
+}
+.footer-address p {
+    display: flex;
+}
+.footer-widget p span {
+    width: calc(100% - 26px);
+}
+.footer-address{
+    margin-top: 10px;
+}
