@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 use Auth,Redirect,View,File,Config,Image,Session;
 use Validator;
@@ -18,6 +19,14 @@ class ServiceController extends Controller
 {
 	public function servicePage(Request $request)
     {
+        // Example: Fetch all images from S3 'images' folder
+      $files = Storage::disk('s3')->files('upload/service/');
+
+      // Generate URLs
+      $data['imageUrls'] = array_map(function($file) {
+          return Storage::disk('s3')->url($file);
+      }, $files);
+      
         $data['serviceData'] = Service::all();
         $page_title = "Service";
         $meta_keyword = "Service";

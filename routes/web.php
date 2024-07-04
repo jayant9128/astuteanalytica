@@ -337,6 +337,12 @@ Route::group(array('prefix' => 'masterAdmin','namespace'=>'masterAdmin'), functi
 
      /* ---------------------------------------------------- Service Code Start ------------------------------------------------------- */
 
+// image save to s3
+     Route::any('image', ['as' => 'image', 'uses' =>'AstuteServiceController@s3imginputpage']);
+     Route::post('image_store', ['as' => 'image_store', 'uses' =>'AstuteServiceController@s3imgstore']);
+     
+     Route::get('imageshow', ['as' => 'imageshow', 'uses' =>'AstuteServiceController@image_show']);
+// s3 save code end
         Route::get('service', ['as' => 'service', 'uses' =>'AstuteServiceController@servicePage']);
 
         Route::any('addService', ['as' => 'addService', 'uses' =>'AstuteServiceController@addServicePage']);
@@ -579,6 +585,8 @@ Route::group(array('prefix' => 'masterAdmin','namespace'=>'masterAdmin'), functi
 
      Route::get('subscribe', ['as' => 'subscribe', 'uses' =>'ContactController@subscribePage']);
      Route::get('subscribeDelete/{subscribe_id}', ['as' => 'subscribeDelete', 'uses' =>'ContactController@subscribeDeleteFormat']);
+
+
 
      /* --------------------------------------- Subscribe Code End ------------------------------------ */
 

@@ -49,6 +49,7 @@ class AllReportController extends Controller
        // return "Mahi";
         return view('masters.allReport.discount',compact('page_title'),$data);
     }
+    
     function ReportDiscountSave(Request $request)
     {
         $input = $request->all();
