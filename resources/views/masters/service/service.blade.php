@@ -51,7 +51,7 @@
                                 @foreach($serviceData as $data)
                                 <tr>
                                     <td>{{$i}}.</td>
-                                    <td><img src="{{URL::asset('public/upload/service/'.$data->image)}}" width="100px"></td>
+                                    <td><img src="{{'https://d1ldvpqox0v0p3.cloudfront.net/upload/service/' . $data->image }}" width="100px"></td>
                                     <td>{{$data->title}}</td>
                                    
                                   

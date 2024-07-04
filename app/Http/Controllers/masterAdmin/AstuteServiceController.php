@@ -81,7 +81,7 @@ class AstuteServiceController extends Controller
           $filename=time().'.'.$file->getClientOriginalName();
           $imgname = $filename;
 
-          // $input['image']= $imgname;
+          $input['image']= $imgname;
           $path = $file->storeAs('upload/service/', $imgname, 's3');
           // $destinationPath=public_path('upload/service/');
           // $request->file('image')->move($destinationPath, $imgname);

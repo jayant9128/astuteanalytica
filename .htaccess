@@ -1,21 +1,10 @@
 <IfModule mod_rewrite.c>
-<IfModule mod_negotiation.c>
-    Options -MultiViews
-</IfModule>
+    RewriteEngine On
 
-RewriteEngine On
+    # Set the base URL for the RewriteRules
+    RewriteBase /astuteanalytica/
 
-# Set the base URL for the RewriteRules
-RewriteBase /astuteanalytca/
-
-RewriteCond %{REQUEST_FILENAME} -d [OR]
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteRule ^ - [L]
-
-RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
-RewriteRule ^(.*)$ public/$1 [L]
-
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ server.php [L]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
 </IfModule>
