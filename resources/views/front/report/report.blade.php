@@ -734,7 +734,7 @@ h3 {
                                     @elseif($action_slug == "infographic")
                                    
                                     <b class="mt-3"><u><span class="text-dark">INFOGRAPHIC: </span></u></b>
-                                    <img class="lazyload" data-src="{{URL::asset('public/upload/report/'.$data->infographics)}}" width="100%" alt="{{$data->alt_tag}}">
+                                    <img class="lazyload" data-src="{{ 'https://d1ldvpqox0v0p3.cloudfront.net/upload/report/' .$data->infographics }}" width="100%" alt="{{$data->alt_tag}}">
                                     @else
                                     <?php echo $data->report_description_1; ?>
                                     <?php echo $data->report_description_2; ?>
@@ -748,7 +748,7 @@ h3 {
                                 
                                   <b class="mt-3"><u><span class="text-dark">INFOGRAPHIC: </span></u></b>
                                     <div class="position-relative imgSsas">
-                                        <img class="mt-0 lazyload" data-src="{{URL::asset('public/upload/report/'.$data->infographics)}}" width="100%" alt="{{$data->alt_tag}}" >
+                                        <img class="mt-0 lazyload" data-src="{{ 'https://d1ldvpqox0v0p3.cloudfront.net/upload/report/' .$data->infographics }}" width="100%" alt="{{$data->alt_tag}}" width="100%" alt="{{$data->alt_tag}}" >
                                         <div class="fullViewA" data-toggle="modal" data-target="#exampleModalInfographic">
                                             <h3><i class="fas fa-search-plus"></i> View Full Infographic </h3>
                                         </div>
@@ -1081,7 +1081,7 @@ h3 {
          <div class="row">
             <div class="col-8 p-1">
                 <div class="bg-white ">
-                    <img class="lazyload" data-src="{{URL::asset('public/upload/report/'.$data->infographics)}}" width="100%" alt="{{$data->alt_tag}}" >
+                    <img class="lazyload" data-src="{{ 'https://d1ldvpqox0v0p3.cloudfront.net/upload/report/' .$data->infographics }}" width="100%" alt="{{$data->alt_tag}}" width="100%" alt="{{$data->alt_tag}}" >
                 </div>
             </div>
             <div class="col-4 p-1">

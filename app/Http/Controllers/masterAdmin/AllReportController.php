@@ -193,9 +193,10 @@ class AllReportController extends Controller
             $filename=$file->getClientOriginalName();
             $imgname = $filename;
             
-            $input['infographics']= $imgname;       
-            $destinationPath=public_path('upload/report/');       
-            $request->file('infographics')->move($destinationPath, $imgname);
+            $input['infographics']= $imgname;  
+            $path = $file->storeAs('upload/report/', $imgname, 's3');     
+            // $destinationPath=public_path('upload/report/');       
+            // $request->file('infographics')->move($destinationPath, $imgname);
            
         } 
         if($request->file('image')!='')
@@ -204,9 +205,10 @@ class AllReportController extends Controller
             $filename=$file->getClientOriginalName();
             $imgname = $filename;
             
-            $input['image']= $imgname;       
-            $destinationPath=public_path('upload/report/');       
-            $request->file('image')->move($destinationPath, $imgname);
+            $input['image']= $imgname;  
+            $path = $file->storeAs('upload/report/', $imgname, 's3');     
+            // $destinationPath=public_path('upload/report/');       
+            // $request->file('image')->move($destinationPath, $imgname);
            
         } 
         
@@ -320,9 +322,10 @@ class AllReportController extends Controller
               $filename=$file->getClientOriginalName();
               $imgname = $filename;
 
-              $input['infographics']= $imgname;       
-              $destinationPath=public_path('upload/report/');       
-              $request->file('infographics')->move($destinationPath, $imgname);
+              $input['infographics']= $imgname;    
+              $path = $file->storeAs('upload/report/', $imgname, 's3');    
+            //   $destinationPath=public_path('upload/report/');       
+            //   $request->file('infographics')->move($destinationPath, $imgname);
            // return "Mahi";
 
           } 

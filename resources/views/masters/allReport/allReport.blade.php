@@ -121,7 +121,7 @@
                                 @foreach($allReportData as $data)
                                 <tr>
                                     <td>{{$i}}.</td>
-                                    <td><img src="{{URL::asset('public/upload/report/'.$data->image)}}" width="200px"></td>
+                                    <td><img src="{{ 'https://d1ldvpqox0v0p3.cloudfront.net/upload/report/' .$data->image }}" width="200px"></td>
                                     <td>{{$data->report_id}}</td>
                                     <td>{{$data->title}}</td>
                                     <td>{{$data->report_title}}</td>
