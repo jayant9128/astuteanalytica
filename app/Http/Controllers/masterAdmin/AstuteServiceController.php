@@ -74,9 +74,12 @@ class AstuteServiceController extends Controller
       if($request->hasFile('image'))
       {
           $file=$request->file('image');
-          $filename=$file->getClientOriginalName();
-          
-          $path = $file->storeAs('upload/service/', $filename, 's3');
+
+          $filename=time().'.'.$file->getClientOriginalName();
+          $imgname = $filename;
+
+          $input['image']= $imgname;
+          $path = $file->storeAs('upload/service/', $imgname, 's3');
 
       }
       Service::insert($input);
