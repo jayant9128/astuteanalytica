@@ -32,8 +32,10 @@
 
                 <div class="services-cart">
                     <div class="services-icon">
-                        <img src="{{URL::asset('public/upload/service/'.$data->image)}}"
-                            class="img-fluid" alt="{{$data->title}}">
+                        <img 
+                            src="https://d1ldvpqox0v0p3.cloudfront.net/upload/service/{{ $data->image }}"
+                            class="img-fluid" 
+                            alt="{{$data->title}}">
                     </div>
                     <h4> {{$data->title}}</h4>
                     <span></span>

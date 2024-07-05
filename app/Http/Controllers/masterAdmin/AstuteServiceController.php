@@ -52,14 +52,10 @@ class AstuteServiceController extends Controller
 
       if ($request->hasFile('img')) {
           $file = $request->file('img');
-          $originalFileName = time().'.'.$file->getClientOriginalName();
+          $originalFileName = $file->getClientOriginalName();
           $path = $file->storeAs('upload', $originalFileName, 's3');
 
-          // You can save the path in the database if needed
-          // Example: Image::create(['path' => $path]);
-
           $request->session()->flash('alert-success','Image has been sucessfully added to s3 bucket.');
-
           return Redirect::route('image');
       }
 
@@ -75,16 +71,12 @@ class AstuteServiceController extends Controller
     public function serviceStore(Request $request)
     {
        $input = $request->all();
-      if($request->file('image')!='')
+      if($request->hasFile('image'))
       {
           $file=$request->file('image');
-          $filename=time().'.'.$file->getClientOriginalName();
-          $imgname = $filename;
-
-          // $input['image']= $imgname;
-          $path = $file->storeAs('upload/service/', $imgname, 's3');
-          // $destinationPath=public_path('upload/service/');
-          // $request->file('image')->move($destinationPath, $imgname);
+          $filename=$file->getClientOriginalName();
+          
+          $path = $file->storeAs('upload/service/', $filename, 's3');
 
       }
       Service::insert($input);
